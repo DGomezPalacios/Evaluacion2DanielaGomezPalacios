@@ -1,7 +1,7 @@
 # Evaluacion2DanielaGomezPalacios
 En este repositorio se encuentra la Evaluación 2 de la Asignatura Desarrollo Orientado a Objetos
 
-#Problema Planteado
+# Problema Planteado
 Una empresa que se dedica a la organización de eventos masivos, de cumpleaños, matrimonios, cenas de empresas y fiestas en la región de
 Valparaíso, requiere un programa que permita almacenar estos eventos, con el fin de entregar un mejor servicio.
 El equipo de desarrollo ya se ha juntado varias veces con el dueño de la empresa y han determinado los datos que se requieren almacenar.
