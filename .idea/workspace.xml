@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bae1ae4-d79f-41ad-902e-82a5bda98b0d" name="Changes" comment="ok funcional con eventos mentirita">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCumpleanos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCumpleanos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoFiesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoFiesta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoMatrimonio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoMatrimonio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/GestorEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/GestorEventos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="1bae1ae4-d79f-41ad-902e-82a5bda98b0d" name="Changes" comment="ok funcional con eventos mentirita" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
