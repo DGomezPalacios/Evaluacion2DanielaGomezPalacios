@@ -1,41 +1,25 @@
 package GomezPalaciosDaniela;
-import java.time.LocalDateTime;
 import java.util.*;
-import java.util.stream.Collectors;
+
 class GestorEventos {
     private List<EventoBase> eventos;
     private int ultimoCodigo;
 
     public GestorEventos() {
         this.eventos = new ArrayList<>();
-        this.ultimoCodigo = 0;
+        this.ultimoCodigo = 1; // Inicia desde 1 para el primer evento
     }
 
-    // Métodos sobrecargados para agregar diferentes tipos de eventos
-    public void agregarEvento(EventoCumpleanos evento) {
+    // Método único para agregar eventos de cualquier tipo
+    public void agregarEvento(EventoBase evento) {
+        evento.setCodigo(ultimoCodigo++); // Asigna el código único y lo incrementa para el siguiente
         eventos.add(evento);
-        ultimoCodigo++;
-    }
-
-    public void agregarEvento(EventoMatrimonio evento) {
-        eventos.add(evento);
-        ultimoCodigo++;
-    }
-
-    public void agregarEvento(EventoCena evento) {
-        eventos.add(evento);
-        ultimoCodigo++;
-    }
-
-    public void agregarEvento(EventoFiesta evento) {
-        eventos.add(evento);
-        ultimoCodigo++;
     }
 
     // Método para listar eventos por fecha
     public List<EventoBase> listarEventosPorFecha() {
         List<EventoBase> eventosOrdenados = new ArrayList<>(eventos);
-        Collections.sort(eventosOrdenados, (e1, e2) -> e1.getFecha().compareTo(e2.getFecha()));
+        eventosOrdenados.sort(Comparator.comparing(EventoBase::getFecha));
         return eventosOrdenados;
     }
 
@@ -68,3 +52,4 @@ class GestorEventos {
                 .orElse("No hay eventos");
     }
 }
+

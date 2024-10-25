@@ -5,10 +5,10 @@ class EventoFiesta extends EventoBase {
     private String tematica;
     private boolean incluyeBarman;
 
-    public EventoFiesta(int codigo, String fecha, String horaInicio, String horaFin,
+    public EventoFiesta(String fecha, String horaInicio, String horaFin,
                         String ubicacion, double precioBase, int cantidadPersonas,
                         boolean incluyeEntretencion, String tematica, boolean incluyeBarman) {
-        super(codigo, fecha, horaInicio, horaFin, ubicacion, precioBase,
+        super(fecha, horaInicio, horaFin, ubicacion, precioBase,
                 cantidadPersonas, incluyeEntretencion);
         this.tematica = tematica;
         this.incluyeBarman = incluyeBarman;

@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bae1ae4-d79f-41ad-902e-82a5bda98b0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/DanielaGomezPalacios.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/Cotizable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCena.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCumpleanos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoFiesta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoMatrimonio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/GestorEventos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/Main.java" afterDir="false" />
+    <list default="true" id="1bae1ae4-d79f-41ad-902e-82a5bda98b0d" name="Changes" comment="ok funcional con eventos mentirita">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCumpleanos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoCumpleanos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoFiesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoFiesta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoMatrimonio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/EventoMatrimonio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/GestorEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/GestorEventos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GomezPalaciosDaniela/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +71,30 @@
       <option name="presentableId" value="Default" />
       <updated>1729870469826</updated>
     </task>
+    <task id="LOCAL-00001" summary="ok funcional con eventos mentirita">
+      <option name="closed" value="true" />
+      <created>1729876011291</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729876011291</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ok funcional con eventos mentirita" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok funcional con eventos mentirita" />
   </component>
 </project>

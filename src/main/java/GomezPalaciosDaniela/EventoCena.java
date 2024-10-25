@@ -5,10 +5,10 @@ class EventoCena extends EventoBase {
     private String tipoMenu;
     private boolean incluyeVinos;
 
-    public EventoCena(int codigo, String fecha, String horaInicio, String horaFin,
+    public EventoCena(String fecha, String horaInicio, String horaFin,
                       String ubicacion, double precioBase, int cantidadPersonas,
                       boolean incluyeEntretencion, String tipoMenu, boolean incluyeVinos) {
-        super(codigo, fecha, horaInicio, horaFin, ubicacion, precioBase,
+        super(fecha, horaInicio, horaFin, ubicacion, precioBase,
                 cantidadPersonas, incluyeEntretencion);
         this.tipoMenu = tipoMenu;
         this.incluyeVinos = incluyeVinos;

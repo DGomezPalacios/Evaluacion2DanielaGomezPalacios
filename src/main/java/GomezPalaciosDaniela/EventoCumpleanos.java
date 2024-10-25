@@ -2,10 +2,10 @@ package GomezPalaciosDaniela;
 class EventoCumpleanos extends EventoBase {
     private int edadCumpleanero;
 
-    public EventoCumpleanos(int codigo, String fecha, String horaInicio, String horaFin,
+    public EventoCumpleanos(String fecha, String horaInicio, String horaFin,
                             String ubicacion, double precioBase, int cantidadPersonas,
                             boolean incluyeEntretencion, int edadCumpleanero) {
-        super(codigo, fecha, horaInicio, horaFin, ubicacion, precioBase,
+        super(fecha, horaInicio, horaFin, ubicacion, precioBase,
                 cantidadPersonas, incluyeEntretencion);
         this.edadCumpleanero = edadCumpleanero;
     }

@@ -3,10 +3,10 @@ package GomezPalaciosDaniela;
 class EventoMatrimonio extends EventoBase {
     private boolean incluyeCeremonia;
 
-    public EventoMatrimonio(int codigo, String fecha, String horaInicio, String horaFin,
+    public EventoMatrimonio(String fecha, String horaInicio, String horaFin,
                             String ubicacion, double precioBase, int cantidadPersonas,
                             boolean incluyeEntretencion, boolean incluyeCeremonia) {
-        super(codigo, fecha, horaInicio, horaFin, ubicacion, precioBase,
+        super(fecha, horaInicio, horaFin, ubicacion, precioBase,
                 cantidadPersonas, incluyeEntretencion);
         this.incluyeCeremonia = incluyeCeremonia;
     }
