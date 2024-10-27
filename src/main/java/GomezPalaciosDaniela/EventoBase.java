@@ -1,7 +1,7 @@
 package GomezPalaciosDaniela;
 
 abstract class EventoBase implements Cotizable {
-    protected int codigo; // Se asignará automáticamente en GestorEventos
+    protected int codigo; // se asignará automáticamente
     protected String fecha;
     protected String horaInicio;
     protected String horaFin;
@@ -10,7 +10,7 @@ abstract class EventoBase implements Cotizable {
     protected int cantidadPersonas;
     protected boolean incluyeEntretencion;
 
-    // Constructor sin parámetro para el código
+    // constructor sin parámetros
     public EventoBase(String fecha, String horaInicio, String horaFin,
                       String ubicacion, double precioBase, int cantidadPersonas,
                       boolean incluyeEntretencion) {
@@ -23,11 +23,11 @@ abstract class EventoBase implements Cotizable {
         this.incluyeEntretencion = incluyeEntretencion;
     }
 
-    // Método abstracto que cada tipo de evento debe implementar
     abstract String obtenerTipoEvento();
 
 
-    // Getters y Setters necesarios
+    // Getters y Setters
+
     public String getFecha() {
         return fecha;
     }
@@ -40,6 +40,6 @@ abstract class EventoBase implements Cotizable {
         this.codigo = codigo;
     }
 
-    // Método abstracto que cada subclase implementará para calcular el precio total
+
     public abstract double calcularPrecioTotal();
 }

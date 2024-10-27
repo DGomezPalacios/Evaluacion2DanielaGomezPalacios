@@ -25,7 +25,7 @@ class EventoCena extends EventoBase {
             precio += 80000;
         }
         if (incluyeVinos) {
-            precio += cantidadPersonas * 15000; // Costo adicional por vinos
+            precio += cantidadPersonas * 15000;
         }
         return precio;
     }

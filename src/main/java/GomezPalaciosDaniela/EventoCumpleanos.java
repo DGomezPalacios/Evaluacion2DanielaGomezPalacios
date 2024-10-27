@@ -22,7 +22,7 @@ class EventoCumpleanos extends EventoBase {
             precio += 100000;
         }
         if (edadCumpleanero < 10) {
-            precio += 50000; // Costo adicional por animación infantil
+            precio += 50000; //animacion infantil extra
         }
         return precio;
     }

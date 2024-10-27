@@ -1,13 +1,11 @@
 package GomezPalaciosDaniela;
 
-import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 public class Main {
-    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm");
 
     public static void main(String[] args) {
@@ -42,10 +40,10 @@ public class Main {
                     mostrarTipoMasSolicitado(gestor);
                     break;
                 case 8:
-                    System.out.println("¡Hasta luego! Que tenga un excelente día.");
+                    System.out.println("Chaito que le vaya bien");
                     break;
                 default:
-                    System.out.println("Opción no válida. Intente nuevamente.");
+                    System.out.println("Elija una opción entre 1 y 8");
             }
         } while (opcion != 8);
 
@@ -59,7 +57,7 @@ public class Main {
         System.out.println("3. Agregar Evento de Cena");
         System.out.println("4. Agregar Evento de Fiesta");
         System.out.println("5. Listar Eventos por Fecha");
-        System.out.println("6. Calcular Ventas por Tipo de Evento");
+        System.out.println("6. Ventas por Tipo de Evento");
         System.out.println("7. Mostrar Tipo de Evento Más Solicitado");
         System.out.println("8. Salir");
     }
@@ -73,9 +71,9 @@ public class Main {
                 if (opcion >= 1 && opcion <= 8) {
                     return opcion;
                 }
-                System.out.println("Error: Seleccione una opción entre 1 y 8");
+                System.out.println("Elija una opción entre 1 y 8");
             } catch (NumberFormatException e) {
-                System.out.println("Error: Ingrese un número válido");
+                System.out.println("Ingrese un número por fsvor");
             }
         }
     }
@@ -142,7 +140,7 @@ public class Main {
 
     private static void mostrarEventosPorFecha(GestorEventos gestor) {
         System.out.println("\nEventos ordenados por fecha:");
-        for (EventoBase evento : gestor.listarEventosPorFecha()) {
+        for (EventoBase evento : gestor.listarEventos()) {
             System.out.printf("Código: %d - Tipo: %s - Fecha: %s%n",
                     evento.getCodigo(), evento.obtenerTipoEvento(), evento.getFecha());
         }
@@ -150,12 +148,12 @@ public class Main {
 
     private static void mostrarVentasPorTipo(GestorEventos gestor) {
         System.out.println("\nVentas por tipo de evento:");
-        gestor.calcularVentasPorTipo().forEach((tipo, total) ->
+        gestor.ventasPorTipo().forEach((tipo, total) ->
                 System.out.printf("%s: $%.2f%n", tipo, total));
     }
 
     private static void mostrarTipoMasSolicitado(GestorEventos gestor) {
-        System.out.println("\nTipo de evento más solicitado: " + gestor.obtenerTipoMasSolicitado());
+        System.out.println("\nTipo de evento más solicitado: " + gestor.masSolicitado());
     }
 
     // Métodos de validación
@@ -163,10 +161,9 @@ public class Main {
         while (true) {
             try {
                 System.out.print("Fecha (yyyy-MM-dd): ");
-                String fecha = scanner.nextLine().trim();
-                return fecha;
+                return scanner.nextLine().trim();
             } catch (DateTimeParseException e) {
-                System.out.println("Error: Formato de fecha inválido. Use yyyy-MM-dd");
+                System.out.println("Formato de fecha inválido. Use yyyy-MM-dd");
             }
         }
     }
@@ -179,7 +176,7 @@ public class Main {
                 LocalTime.parse(hora, TIME_FORMATTER);
                 return hora;
             } catch (DateTimeParseException e) {
-                System.out.println("Error: Formato de hora inválido. Use HH:mm (24 horas)");
+                System.out.println("Formato de hora inválido. Use HH:mm (24 horas)");
             }
         }
     }
@@ -191,16 +188,14 @@ public class Main {
             LocalTime fin = LocalTime.parse(horaFin, TIME_FORMATTER);
 
             if (fin.isAfter(inicio) || fin.isBefore(inicio)) {
-                // Si la hora de fin es antes que la de inicio, asumimos que es del día siguiente
+                // Si la hora de fin es antes que la de inicio se asume que es del otro día
                 if (fin.isBefore(inicio)) {
-                    System.out.println("Nota: El evento terminará al día siguiente");
+                    System.out.println("El evento termina al día siguiente");
                 }
                 return horaFin;
             }
-            // Solo es inválido si las horas son exactamente iguales
             if (fin.equals(inicio)) {
-                System.out.println("Error: La hora de fin no puede ser igual a la hora de inicio");
-                continue;
+                System.out.println("La hora de fin no puede ser igual a la hora de inicio");
             }}}
 
     private static String validarUbicacion(Scanner scanner) {
@@ -210,7 +205,7 @@ public class Main {
             if (ubicacion.length() >= 3 && ubicacion.length() <= 100) {
                 return ubicacion;
             }
-            System.out.println("Error: La ubicación debe tener entre 3 y 100 caracteres");
+            System.out.println("La ubicación debe tener entre 3 y 100 caracteres");
         }
     }
 
@@ -223,9 +218,9 @@ public class Main {
                 if (cantidad > 0 && cantidad <= 1000) {
                     return cantidad;
                 }
-                System.out.println("Error: La cantidad debe estar entre 1 y 1000 personas");
+                System.out.println("La cantidad debe estar entre 1 y 1000 personas");
             } catch (NumberFormatException e) {
-                System.out.println("Error: Ingrese un número válido");
+                System.out.println("Ingrese un número por favor");
             }
         }
     }
@@ -239,9 +234,9 @@ public class Main {
                 if (precio >= 0) {
                     return precio;
                 }
-                System.out.println("Error: El precio no puede ser negativo");
+                System.out.println("El precio no puede ser negativo");
             } catch (NumberFormatException e) {
-                System.out.println("Error: Ingrese un número válido");
+                System.out.println("Ingrese un número por favor");
             }
         }
     }
@@ -255,7 +250,7 @@ public class Main {
             } else if (input.equals("no") || input.equals("n")) {
                 return false;
             }
-            System.out.println("Error: Responda 'si' o 'no'");
+            System.out.println("Responda 'si' o 'no'");
         }
     }
 
@@ -268,9 +263,9 @@ public class Main {
                 if (edad >= 0 && edad <= 150) {
                     return edad;
                 }
-                System.out.println("Error: La edad debe estar entre 0 y 150 años");
+                System.out.println("La edad debe estar entre 0 y 150 años");
             } catch (NumberFormatException e) {
-                System.out.println("Error: Ingrese un número válido");
+                System.out.println("Ingrese un número por favr");
             }
         }
     }
