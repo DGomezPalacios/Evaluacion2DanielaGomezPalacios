@@ -53,7 +53,7 @@ public class Main {
                             gestor.obtenerTipoMasSolicitado());
                     break;
                 case 8:
-                    System.out.println("Saliendo del programa...");
+                    System.out.println("Chaito que le vaya bien!");
                     break;
                 default:
                     System.out.println("Opción no válida. Intente nuevamente.");
@@ -99,9 +99,8 @@ public class Main {
         double precio = solicitarDouble("Precio: ", scanner);
         int cantidadPersonas = solicitarEntero("Cantidad de personas: ", scanner);
         boolean incluyeEntretenimiento = solicitarBoolean("¿Incluye entretenimiento? (true/false): ", scanner);
-        String tipoMenu = solicitarCadena("Tipo Menu: ", scanner);
         boolean incluyeVinos = solicitarBoolean("¿Incluye Vinos? (true/false)", scanner);
-        return new EventoCena(fecha, horaInicio, horaFin, ubicacion, precio, cantidadPersonas, incluyeEntretenimiento, tipoMenu, incluyeVinos);
+        return new EventoCena(fecha, horaInicio, horaFin, ubicacion, precio, cantidadPersonas, incluyeEntretenimiento, incluyeVinos);
     }
     private static EventoFiesta crearEventoFiesta(Scanner scanner) {
         System.out.println("Ingrese los datos para el evento de fiesta:");
@@ -114,7 +113,7 @@ public class Main {
         boolean incluyeEntretenimiento = solicitarBoolean("¿Incluye entretenimiento? (true/false): ", scanner);
         String tematica = solicitarCadena("Tematica: ", scanner);
         boolean barman = solicitarBoolean("¿Incluye Barman? (true/false)", scanner);
-        return new EventoFiesta(fecha, horaInicio, horaFin, ubicacion, precio, cantidadPersonas, incluyeEntretenimiento, tematica, barman);
+        return new EventoFiesta(fecha, horaInicio, horaFin, ubicacion, precio, cantidadPersonas, incluyeEntretenimiento, barman);
     }
 
     private static int solicitarEntero(String mensaje, Scanner scanner) {
